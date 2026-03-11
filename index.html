@@ -1,499 +1,410 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Đức Tín - Chuyên gia chế tạo và nâng cấp hệ thống băng chuyền (Conveyor Retrofit) cho nhà máy F&B và đối tác OEM tại TP.HCM và toàn quốc."
-    />
-    <title>
-      Đức Tín | Giải Pháp Băng Chuyền Thực Phẩm & Kỹ Thuật Chuyên Sâu
-    </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Đức Tín - Chuyên gia chế tạo và nâng cấp hệ thống băng chuyền (Conveyor Retrofit) cho nhà máy F&B và đối tác OEM tại TP.HCM và toàn quốc.">
+    <title>Đức Tín | Giải Pháp Băng Chuyền Thực Phẩm & Kỹ Thuật Chuyên Sâu</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bangtaiductin.com/">
+    <meta property="og:title" content="Đức Tín | Giải Pháp Băng Chuyền Thực Phẩm & Kỹ Thuật Chuyên Sâu">
+    <meta property="og:description" content="Chuyên gia chế tạo, nâng cấp (Retrofit) hệ thống băng chuyền cho nhà máy F&B. Gia công inox, dán nối PU, và tích hợp băng tải chuyên dụng tại TP.HCM.">
+    <meta property="og:image" content="https://bangtaiductin.com/assets/img/your-best-thumbnail.jpg"> 
+    
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <style>
+        .floating-contact {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+        }
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+        .float-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+            color: white;
+        }
+        .btn-zalo {
+            background-color: #0068ff;
+            font-weight: 800;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-phone {
+            background-color: #28a745;
+        }
+        .btn-phone svg {
+            width: 26px;
+            height: 26px;
+            fill: currentColor;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Đức Tín Conveyor",
+      "image": "https://bangtaiductin.com/assets/img/logo.jpg",
+      "@id": "https://bangtaiductin.com/",
+      "url": "https://bangtaiductin.com/",
+      "telephone": "[SỐ ĐIỆN THOẠI CỦA BẠN]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2/15 Bùi Công Trừng, Ấp 3",
+        "addressLocality": "Xã Đông Thạnh, Huyện Hóc Môn",
+        "addressRegion": "TP. Hồ Chí Minh",
+        "addressCountry": "VN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.8980, 
+        "longitude": 106.6340 
+      },
+      "description": "Chuyên gia chế tạo và nâng cấp hệ thống băng chuyền cho nhà máy F&B và đối tác OEM."
+    }
+    </script>
+</head>
+<body>
+
     <header id="main-header">
-      <div class="container flex-between">
-        <div class="logo">
-          <strong>ĐỨC TÍN</strong>
+        <div class="container flex-between">
+            <div class="logo">
+                <strong>ĐỨC TÍN</strong>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#services">Dịch Vụ</a></li>
+                    <li><a href="#projects">Dự Án</a></li>
+                    <li><a href="#solutions">Giải Pháp</a></li>
+                    <li><a href="#contact" class="btn-primary">Yêu Cầu Khảo Sát</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#capabilities">Dịch Vụ</a></li>
-            <li><a href="#projects">Dự Án</a></li>
-            <li><a href="#expertise">Giải Pháp</a></li>
-            <li><a href="#contact" class="btn-primary">Yêu Cầu Khảo Sát</a></li>
-          </ul>
-        </nav>
-      </div>
     </header>
 
     <main>
-      <section id="hero" class="hero-section">
-        <video class="hero-video" autoplay loop muted playsinline>
-          <source src="assets/videos/20250815_181131.mp4" type="video/mp4" />
-        </video>
+        <section id="hero" class="hero-section">
+            <video class="hero-video" autoplay loop muted playsinline poster="assets/img/hero-fallback.jpg">
+                <source src="assets/videos/20250815_181131.mp4" type="video/mp4">
+            </video>
+            
+            <div class="hero-overlay"></div>
 
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content kinetic-up">
-          <h1>Chế Tạo & Nâng Cấp Băng Chuyền Công Nghiệp</h1>
-          <p>
-            Từ một băng tải đơn lẻ đến việc tích hợp toàn bộ hệ thống nhà máy.
-            <strong>Đức Tín</strong> cung cấp giải pháp gia công và lắp đặt
-            chuyên sâu cho các nhà máy F&B và đối tác OEM. Xưởng chế tạo đặt tại
-            TP.HCM, sẵn sàng thi công tại mọi tỉnh thành.
-          </p>
-          <div class="hero-actions">
-            <a href="#capabilities" class="btn-primary">Khám Phá Giải Pháp</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="capabilities" class="section-padding bg-light">
-        <div class="container">
-          <div class="section-header kinetic-up">
-            <h2>Danh Mục Cốt Lõi</h2>
-            <p>
-              Giải pháp kỹ thuật được tinh chỉnh cho từng quy trình công nghiệp
-              và ngân sách thực tế của nhà máy.
-            </p>
-          </div>
-          <div class="grid-3">
-            <div class="card kinetic-up delay-1">
-              <h3>Cải Tạo & Nâng Cấp (Retrofit)</h3>
-              <p>
-                Thiết kế lại và tối ưu hóa hệ thống băng tải hiện hữu, xử lý
-                triệt để các điểm nghẹt gây cản trở năng suất.
-              </p>
-              <a
-                href="https://bangtaiductin.com/dich-vu/caitao"
-                class="read-more"
-                >Xem chi tiết &rarr;</a
-              >
+            <div class="container hero-content kinetic-up">
+                <h1>Chế Tạo & Nâng Cấp Băng Chuyền Công Nghiệp</h1>
+                <p>Từ một băng tải đơn lẻ đến việc tích hợp toàn bộ hệ thống nhà máy. <strong>Đức Tín</strong> cung cấp giải pháp gia công và lắp đặt chuyên sâu cho các nhà máy F&B và đối tác OEM. Xưởng chế tạo đặt tại TP.HCM, sẵn sàng thi công tại mọi tỉnh thành.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn-primary">Khám Phá Giải Pháp</a>
+                </div>
             </div>
-            <div class="card kinetic-up delay-2">
-              <h3>Dán Nối Băng Tải PU</h3>
-              <p>
-                Dịch vụ dán nối, ép nhiệt dây băng tải PU/PVC lưu động trực tiếp
-                tại nhà máy khách hàng, đảm bảo mối nối bền bỉ, chuẩn vi sinh.
-              </p>
-              <a
-                href="https://bangtaiductin.com/dich-vu/dannoipu"
-                class="read-more"
-                >Xem chi tiết &rarr;</a
-              >
+        </section>
+
+        <section id="services" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header kinetic-up">
+                    <h2>Danh Mục Cốt Lõi</h2>
+                    <p>Giải pháp kỹ thuật được tinh chỉnh cho từng quy trình công nghiệp và ngân sách thực tế của nhà máy.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="card kinetic-up delay-1">
+                        <h3>Cải Tạo & Nâng Cấp (Retrofit)</h3>
+                        <p>Thiết kế lại và tối ưu hóa hệ thống băng tải hiện hữu, nâng cấp lên hệ thống <strong>băng tải nhựa (modular belt)</strong> chuyên dụng để xử lý triệt để các điểm nghẹt gây cản trở năng suất.</p>
+                        <a href="https://bangtaiductin.com/dich-vu/caitao" class="read-more">Xem chi tiết →</a>
+                    </div>
+                    <div class="card kinetic-up delay-2">
+                        <h3>Dán Nối Băng Tải PU</h3>
+                        <p>Dịch vụ dán nối, ép nhiệt dây băng tải PU/PVC lưu động trực tiếp tại nhà máy khách hàng, đảm bảo mối nối bền bỉ, chuẩn vi sinh.</p>
+                        <a href="https://bangtaiductin.com/dich-vu/dannoipu" class="read-more">Xem chi tiết →</a>
+                    </div>
+                    <div class="card kinetic-up delay-3">
+                        <h3>Thiết Kế & Chế Tạo (OEM)</h3>
+                        <p>Gia công cơ khí, chế tạo băng chuyền inox chuyên dụng cho ngành thực phẩm theo bản vẽ hoặc yêu cầu đặc thù.</p>
+                        <a href="https://bangtaiductin.com/dich-vu/thietkechetao" class="read-more">Xem chi tiết →</a>
+                    </div>
+                </div>
             </div>
-            <div class="card kinetic-up delay-3">
-              <h3>Thiết Kế & Chế Tạo (OEM)</h3>
-              <p>
-                Gia công cơ khí , chế tạo băng chuyền inox chuyên dụng cho ngành
-                thực phẩm theo bản vẽ hoặc yêu cầu đặc thù.
-              </p>
-              <a
-                href="https://bangtaiductin.com/dich-vu/thietkechetao"
-                class="read-more"
-                >Xem chi tiết &rarr;</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Projects-->
-      <section id="projects" class="section-padding">
-        <div class="container">
-          <div class="section-header kinetic-up">
-            <h2>Dự Án Tiêu Biểu</h2>
-          </div>
-
-          <div class="projects-slider">
-            <button class="slider-btn prev">&lt;</button>
-
-            <div class="projects-viewport">
-              <div class="projects-track">
-                <!--infinite looping carousel-->
-                <!-- PROJECT CARD 1 -->
-                <div class="project-card kinetic-up delay-1">
-                  <a
-                    href="https://bangtaiductin.com/du-an/thuysanlanh"
-                    class="project-link"
-                  ></a>
-                  <div class="project-image">
-                    <img src="assets/img/20260228_132549.png" />
-                  </div>
-                  <div class="project-info">
-                    <h4>Môi Trường Đông Lạnh Chế Biến Thủy Sản</h4>
-                    <p>
-                      Băng chuyền xuống dốc cho nhà máy Minh Phú, tăng năng suất
-                      30%.
-                    </p>
-                  </div>
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <div class="section-header kinetic-up">
+                    <h2>Dự Án Tiêu Biểu</h2>
                 </div>
 
-                <!-- PROJECT CARD 2 -->
-                <div class="project-card kinetic-up delay-2">
-                  <a
-                    href="https://bangtaiductin.com/du-an/lo-nuong-banh"
-                    class="project-link"
-                  ></a>
-                  <div class="project-image">
-                    <img src="assets/img/20250706_082351.jpg" />
-                  </div>
-                  <div class="project-info">
-                    <h4>Băng Tải Lò Nướng Bánh</h4>
-                    <p>Thay thế dây chuyền inox chịu nhiệt.</p>
-                  </div>
-                </div>
+                <div class="projects-slider">
+                    <button class="slider-btn prev"><</button>
+                    
+                    <div class="projects-viewport">
+                        <div class="projects-track">
+                            
+                            <div class="project-card kinetic-up delay-1">
+                                <a href="https://bangtaiductin.com/du-an/thuysanlanh" class="project-link"></a>
+                                <div class="project-image">
+                                    <img src="assets/img/20260228_132549.png" alt="Băng chuyền đổ dốc cho môi trường đông lạnh thủy sản IQF">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Môi Trường Đông Lạnh Chế Biến Thủy Sản</h4>
+                                    <p>Băng chuyền xuống dốc cho nhà máy Minh Phú, tăng năng suất 30%.</p>
+                                </div>
+                            </div>
 
-                <!-- PROJECT CARD 3 -->
-                <div class="project-card kinetic-up delay-3">
-                  <a
-                    href="https://bangtaiductin.com/du-an/lo-nuong-banh"
-                    class="project-link"
-                  ></a>
-                  <div class="project-image">
-                    <img src="" />
-                  </div>
-                  <div class="project-info">
-                    <h4>Dự Án 3</h4>
-                    <p>ghí chú</p>
-                  </div>
-                </div>
+                            <div class="project-card kinetic-up delay-2">
+                                <a href="https://bangtaiductin.com/du-an/lo-nuong-banh" class="project-link"></a>
+                                <div class="project-image">
+                                    <img src="assets/img/20250706_082351.jpg" alt="Hệ thống băng tải chịu nhiệt cho lò nướng bánh công nghiệp">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Băng Tải Lò Nướng Bánh</h4>
+                                    <p>Thay thế dây chuyền inox chịu nhiệt.</p>
+                                </div>
+                            </div>
 
-                <!-- PROJECT CARD 4 -->
-                <div class="project-card kinetic-up delay-4">
-                  <a
-                    href="https://bangtaiductin.com/du-an/lo-nuong-banh"
-                    class="project-link"
-                  ></a>
-                  <div class="project-image">
-                    <img src="" />
-                  </div>
-                  <div class="project-info">
-                    <h4>Dự Án 4</h4>
-                    <p>ghi chú</p>
-                  </div>
-                </div>
+                            <div class="project-card kinetic-up delay-3">
+                                <a href="https://bangtaiductin.com/du-an/lo-nuong-banh" class="project-link"></a>
+                                <div class="project-image">
+                                    <img src="assets/img/placeholder.jpg" alt="Dự án lắp đặt băng chuyền thực phẩm">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Dự Án 3</h4>
+                                    <p>Ghi chú dự án...</p>
+                                </div>
+                            </div>
 
-                <!-- Future projects add here -->
-              </div>
+                            <div class="project-card kinetic-up delay-4">
+                                <a href="https://bangtaiductin.com/du-an/lo-nuong-banh" class="project-link"></a>
+                                <div class="project-image">
+                                    <img src="assets/img/placeholder.jpg" alt="Thi công hệ thống băng tải công nghiệp">
+                                </div>
+                                <div class="project-info">
+                                    <h4>Dự Án 4</h4>
+                                    <p>Ghi chú dự án...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="slider-btn next">></button>
+                </div>
             </div>
+        </section>
 
-            <button class="slider-btn next">&gt;</button>
-          </div>
-        </div>
-      </section>
+        
 
-      <section id="expertise" class="section-padding bg-light">
-        <div class="container innovation-split">
-          <div class="innovation-text kinetic-up">
-            <h2>Giải Quyết Môi Trường Khắc Nghiệt</h2>
-            <p>
-              Chúng tôi hiểu những rủi ro các nhà máy phải đối mặt. Đức Tín mang
-              đến giải pháp thực tế, được mô phỏng và tính toán kỹ lưỡng trước
-              khi chế tạo:
-            </p>
-            <ul>
-              <li>
-                <strong>Cấp Đông Sâu (Thủy Sản/IQF):</strong> Xử lý hiện tượng
-                module cao su của belt bị chai cứng, mất ma sát do nhiệt độ âm
-                sâu. Khắc phục tình trạng trượt, văng các gói tôm 1kg trên băng
-                chuyền đổ dốc sau tháp Spiral IQF.
-              </li>
-              <li>
-                <strong>Môi Trường Nóng Ẩm:</strong> Chống ăn mòn vật liệu và xử
-                lý rỉ sét tại các điểm nối hàn.
-              </li>
-              <li>
-                <strong>Tẩy Rửa:</strong> Thiết kế khung sườn mở (open-frame)
-                giúp nhà máy dễ dàng vệ sinh xịt rửa, không đọng nước, không
-                tích tụ vi khuẩn.
-              </li>
-            </ul>
-          </div>
+        <section id="solutions" class="section-padding bg-white" aria-labelledby="solutions-heading">
+            <div class="container">
+                <div class="innovation-split">
+            
+                    <div class="innovation-text kinetic-up">
+                        <h2 id="solutions-heading">Giải Quyết Môi Trường Khắc Nghiệt</h2>
+                        <p>Chúng tôi hiểu những rủi ro các nhà máy phải đối mặt. Đức Tín mang đến giải pháp thực tế, được mô phỏng và tính toán kỹ lưỡng trước khi chế tạo:</p>
+                
+                    <ul>
+                        <li><strong>Cấp Đông Sâu (Thủy Sản/IQF):</strong> Xử lý hiện tượng module cao su của belt bị chai cứng, mất ma sát do nhiệt độ âm sâu. Khắc phục tình trạng trượt, văng các gói tôm 1kg trên băng chuyền đổ dốc sau tháp Spiral IQF.</li>
+                        <li><strong>Môi Trường Nóng Ẩm:</strong> Chống ăn mòn vật liệu và xử lý rỉ sét tại các điểm nối hàn.</li>
+                        <li><strong>Tẩy Rửa:</strong> Thiết kế khung sườn mở (open-frame) giúp nhà máy dễ dàng vệ sinh xịt rửa, không đọng nước, không tích tụ vi khuẩn.</li>
+                    </ul>
+                    <div style="margin-top: 25px;">
+                         <p style="font-weight: 600; margin-bottom: 10px;">Băng chuyền của bạn đang gặp sự cố?</p>
+                           <a href="/wiki.html" class="btn-primary" style="background-color: #e74c3c;">Tra Cứu Bệnh & Cách Xử Lý Ngay →</a>
+                    </div>
+                </div>
 
-          <div class="innovation-visual kinetic-up delay-2">
-            <div class="blueprint-placeholder">
-              <span>[Mô Hình 3D / Bản Vẽ CAD]</span>
+                 <div class="innovation-visual kinetic-up delay-1" aria-hidden="true">
+                    <div class="blueprint-placeholder">
+                    <span>// [Mô Hình 3D / Bản Vẽ CAD] //</span>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Clinents -->
-      <section id="clients" class="section-padding">
-        <div class="container kinetic-up">
-          <div class="section-header">
-            <h2>Đối Tác & Khách Hàng</h2>
-          </div>
+        <section id="clients" class="section-padding">
+            <div class="container kinetic-up">
+                <div class="section-header">
+                    <h2>Đối Tác & Khách Hàng</h2>
+                </div>
 
-          <div class="logo-marquee">
+                   <div class="logo-marquee">
             <div class="logo-track">
               <!-- ORIGINAL SET -->
-              <a
-                href="https://www.pepsico.com"
-                target="_blank"
-                class="logo-item"
-                >Pepsico Foods</a
-              >
-              <a href="https://www.kumho.com" target="_blank" class="logo-item"
-                >Kumho</a
-              >
-              <a href="https://www.ishida.com" target="_blank" class="logo-item"
-                >Ishida</a
-              >
-              <a
-                href="https://www.hanacans.com"
-                target="_blank"
-                class="logo-item"
-                >Hanacans</a
-              >
-              <a
-                href="https://www.baosteel.com/home"
-                target="_blank"
-                class="logo-item"
-                >Baosteel</a
-              >
-              <a
-                href="https://www.bridgestone.com.vn/"
-                target="_blank"
-                class="logo-item"
-                >Bridgestone</a
-              >
-              <a
-                href="https://anhphat.com.vn/"
-                target="_blank"
-                class="logo-item"
-                >Anh Phát</a
-              >
-              <a
-                href="https://www.perfettivanmelle.com/"
-                target="_blank"
-                class="logo-item"
-                >PERFETTI VAN MELLE</a
-              >
-              <a
-                href="https://taikaseafood.com.vn/"
-                target="_blank"
-                class="logo-item"
-                >TAIKA SEAFOOD</a>
-              <a
-                href="https://tgfish.vn/"
-                target="_blank"
-                class="logo-item"
-                >TG Fíhery</a>
+              <a href="https://www.pepsico.com" target="_blank" class="logo-item">Pepsico Foods</a>
+              <a href="https://www.kumho.com" target="_blank" class="logo-item">Kumho</a>
+              <a href="https://www.ishida.com" target="_blank" class="logo-item">Ishida</a>
+              <a href="https://www.hanacans.com" target="_blank" class="logo-item">Hanacans</a>
+              <a href="https://www.baosteel.com/home" target="_blank" class="logo-item">Baosteel</a>
+              <a href="https://www.bridgestone.com.vn/" target="_blank" class="logo-item">Bridgestone</a>
+              <a href="https://anhphat.com.vn/" target="_blank" class="logo-item">Anh Phát</a>
+              <a href="https://www.perfettivanmelle.com/" target="_blank" class="logo-item">PERFETTI VAN MELLE</a>
+              <a href="https://taikaseafood.com.vn/" target="_blank" class="logo-item">TAIKA SEAFOOD</a>
+              <a href="https://tgfish.vn/" target="_blank" class="logo-item">TG Fíhery</a>
 
               <!-- DUPLICATE SET (for seamless loop) -->
-              <a
-                href="https://www.pepsico.com"
-                target="_blank"
-                class="logo-item"
-                >Pepsico Foods</a
-              >
-              <a href="https://www.kumho.com" target="_blank" class="logo-item"
-                >Kumho</a
-              >
-              <a href="https://www.ishida.com" target="_blank" class="logo-item"
-                >Ishida</a
-              >
-              <a
-                href="https://www.hanacans.com"
-                target="_blank"
-                class="logo-item"
-                >Hanacans</a
-              >
-              <a
-                href="https://www.baosteel.com/home"
-                target="_blank"
-                class="logo-item"
-                >Baosteel</a
-              >
-              <a
-                href="https://www.bridgestone.com.vn/"
-                target="_blank"
-                class="logo-item"
-                >Bridgestone</a
-              >
-              <a
-                href="https://anhphat.com.vn/"
-                target="_blank"
-                class="logo-item"
-                >Anh Phát</a
-              >
-              <a
-                href="https://www.perfettivanmelle.com/"
-                target="_blank"
-                class="logo-item"
-                >PERFETTI VAN MELLE</a
-              >
-              <a
-                href="https://taikaseafood.com.vn/"
-                target="_blank"
-                class="logo-item"
-                >TAIKA SEAFOOD</a>
-              <a
-                href="https://tgfish.vn/"
-                target="_blank"
-                class="logo-item"
-                >TG Fíhery</a>
-              
-            </div>
-          </div>
-        </div>
-      </section>
+              <a href="https://www.pepsico.com" target="_blank" class="logo-item">Pepsico Foods</a>
+              <a href="https://www.kumho.com" target="_blank" class="logo-item">Kumho</a>
+              <a href="https://www.ishida.com" target="_blank" class="logo-item">Ishida</a>
+              <a href="https://www.hanacans.com" target="_blank" class="logo-item">Hanacans</a>
+              <a href="https://www.baosteel.com/home" target="_blank" class="logo-item">Baosteel</a>
+              <a href="https://www.bridgestone.com.vn/" target="_blank" class="logo-item">Bridgestone</a>
+              <a href="https://anhphat.com.vn/" target="_blank" class="logo-item">Anh Phát</a>
+              <a href="https://www.perfettivanmelle.com/" target="_blank" class="logo-item">PERFETTI VAN MELLE</a>
+              <a href="https://taikaseafood.com.vn/" target="_blank" class="logo-item">TAIKA SEAFOOD</a>
+              <a href="https://tgfish.vn/" target="_blank" class="logo-item">TG Fíhery</a>             
+                    </div>
+                  </div>
+                </div>
+        </section>
 
-      <!-- CALL TO ACTION -->
-      <section id="calltoaction" class="section-padding bg-dark">
-        <div class="container text-center kinetic-up">
-          <h2>Chất Lượng & Hiệu Quả</h2>
-          <p>
-            Đến với Đức Tín, quý khách sẽ được kỹ sư trực tiếp tư vấn.
-            Chúng tôi luôn lắng nghe, hiểu bài toán vận hành để đưa ra giải
-            pháp cân bằng giữa yêu cầu kỹ thuật khắt khe và ngân sách thực tế
-            của nhà máy.
-          </p>
-          <a
-            href="mailto:huynh.nguyen@southernstar-vn.com"
-            class="btn-primary btn-large"
-            >Yêu Cầu Khảo Sát Tận Nơi</a
-          >
+        <section id="engineering-calculator" class="section-padding bg-light">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Công Cụ Tính Công Suất Động Cơ</h2>
+            <p>Nhập thông số hệ thống của bạn để tính toán công suất động cơ tối thiểu cần thiết.</p>
         </div>
-      </section>
+
+        <div class="calculator-card" style="max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            
+            <div class="input-group" style="margin-bottom: 20px;">
+                <label for="calc-load" style="display: block; font-weight: 600; margin-bottom: 5px;">Tổng Tải Trọng (kg)</label>
+                <input type="number" id="calc-load" placeholder="VD: 500" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 20px;">
+                <label for="calc-speed" style="display: block; font-weight: 600; margin-bottom: 5px;">Tốc Độ Băng Tải (m/s)</label>
+                <input type="number" id="calc-speed" placeholder="VD: 0.5" step="0.1" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 20px;">
+                <label for="calc-incline" style="display: block; font-weight: 600; margin-bottom: 5px;">Góc Nghiêng (Độ)</label>
+                <input type="number" id="calc-incline" placeholder="VD: 0 (Đi ngang), 15 (Lên dốc)" value="0" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div class="input-group" style="margin-bottom: 30px;">
+                <label for="calc-friction" style="display: block; font-weight: 600; margin-bottom: 5px;">Hệ Số Ma Sát (Dự Kiến)</label>
+                <select id="calc-friction" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    <option value="0.3">Băng Tải Nhựa / Modular Belt (~0.3)</option>
+                    <option value="0.5">Băng Tải PU/PVC trượt trên mặt Inox (~0.5)</option>
+                    <option value="0.05">Băng Tải Con Lăn / Roller (~0.05)</option>
+                </select>
+            </div>
+
+            <button id="btn-calculate" class="btn-primary" style="width: 100%; padding: 15px; font-size: 16px; border: none; cursor: pointer;">Tính Toán Công Suất</button>
+
+            <div id="calc-result" style="display: none; margin-top: 30px; padding: 20px; background: #e9f7ef; border-left: 5px solid #28a745; border-radius: 4px;">
+                <h3 style="margin-top: 0; color: #155724;">Kết Quả Yêu Cầu: <span id="output-kw" style="font-size: 1.5em; font-weight: 800;">0</span> kW</h3>
+                <p style="margin-bottom: 15px; font-size: 14px; color: #155724;">*Lưu ý: Kết quả đã bao gồm hệ số an toàn cơ bản. Để chọn Motor & Hộp Giảm Tốc chính xác cho môi trường thực tế, vui lòng liên hệ kỹ sư Đức Tín.</p>
+                <a href="https://zalo.me/0934045434" target="_blank" class="btn-zalo" style="display: inline-block; padding: 10px 20px; background: #0068ff; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">Gửi Yêu Cầu Khảo Sát Tận Nơi</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="calltoaction" class="section-padding bg-dark">
+            <div class="container text-center kinetic-up">
+                <h2>Chất Lượng & Hiệu Quả</h2>
+                <p>Đến với Đức Tín, quý khách sẽ được đội ngũ kỹ sư trực tiếp tư vấn. Chúng tôi luôn lắng nghe, thấu hiểu bài toán vận hành để đưa ra giải pháp cân bằng giữa yêu cầu kỹ thuật khắt khe và ngân sách thực tế của nhà máy.</p>
+                <a href="mailto:huynh.nguyen@southernstar-vn.com" class="btn-primary btn-large">Yêu Cầu Khảo Sát Tận Nơi</a>
+            </div>
+        </section>
     </main>
-
-    <!-- FOOTER-->
+    
     <footer class="bg-dark main-footer">
-      <div class="footer-wrapper">
-        <section class="footer--top">
-          <article class="container top-article">
-            <div class="footer--links">
-              <ul class="footer--list">
-                <li class="footer--listItem">
-                  <a
-                    href="https://southernstar-vn.com/"
-                    class="footer--link text-small"
-                    >Dịch vụ</a
-                  >
-                </li>
-                <li class="footer--listItem">
-                  <a
-                    href="https://southernstar-vn.com/"
-                    class="footer--link text-small"
-                    >Dự án</a
-                  >
-                </li>
-                <li class="footer--listItem">
-                  <a
-                    href="https://southernstar-vn.com/"
-                    class="footer--link text-small"
-                    >About us</a
-                  >
-                </li>
-              </ul>
-            </div>
+        <div class="footer-wrapper">
+            <section class="footer--top">
+                <article class="container top-article">
+                    <div class="footer--links">
+                        <ul class="footer--list">
+                            <li class="footer--listItem"><a href="https://southernstar-vn.com/" class="footer--link text-small">Dịch vụ</a></li>
+                            <li class="footer--listItem"><a href="https://southernstar-vn.com/" class="footer--link text-small">Dự án</a></li>
+                            <li class="footer--listItem"><a href="https://southernstar-vn.com/" class="footer--link text-small">About us</a></li>
+                        </ul>
+                    </div>
+               
+                    <div class="footer--socialMedia">
+                        <ul class="footer--socialList">
+                            <li class="footer--socialLink">
+                                <a href="https://www.linkedin.com/in/anh-%C4%91%E1%BA%B7ng-7b62b5374/" target="_blank" class="footer--socialIcon" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.22 8.98h4.54V24H.22V8.98zM8.56 8.98h4.35v2.05h.06c.61-1.15 2.09-2.35 4.29-2.35 4.59 0 5.44 3.02 5.44 6.95V24h-4.54v-7.54c0-1.8-.03-4.11-2.51-4.11-2.52 0-2.91 1.96-2.91 3.98V24H8.56V8.98z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer--socialLink">
+                                <a href="https://www.youtube.com/" target="_blank" class="footer--socialIcon" aria-label="YouTube">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.9-1.6-.9-2-1C17.9 2.5 12 2.5 12 2.5h-.1s-5.9 0-8.7.3c-.4.1-1.2.1-2 1C.6 4.5.5 6.2.5 6.2S.2 8 .2 9.7v1.6C.2 13 .5 14.8.5 14.8s.2 1.7.8 2.4c.8.9 1.8.9 2.3 1 1.7.2 7.4.3 7.4.3s5.9 0 8.7-.3c.4-.1 1.2-.1 2-1 .6-.7.8-2.4.8-2.4s.3-1.8.3-3.5V9.7c0-1.7-.3-3.5-.3-3.5zM9.8 14.6V7.9l6.4 3.3-6.4 3.4z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
 
-            <div class="footer--socialMedia">
-              <ul class="footer--socialList">
-                <li class="footer--socialLink">
-                  <a
-                    href="https://www.linkedin.com/in/anh-%C4%91%E1%BA%B7ng-7b62b5374/"
-                    target="_blank"
-                    class="footer--socialIcon"
-                    aria-label="LinkedIn"
-                  >
-                    <!-- LinkedIn SVG -->
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.22 8.98h4.54V24H.22V8.98zM8.56 8.98h4.35v2.05h.06c.61-1.15 2.09-2.35 4.29-2.35 4.59 0 5.44 3.02 5.44 6.95V24h-4.54v-7.54c0-1.8-.03-4.11-2.51-4.11-2.52 0-2.91 1.96-2.91 3.98V24H8.56V8.98z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer--socialLink">
-                  <a
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    class="footer--socialIcon"
-                    aria-label="YouTube"
-                  >
-                    <!-- LinkedIn SVG -->
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M23.5 6.2s-.2-1.7-.8-2.4c-.8-.9-1.6-.9-2-1C17.9 2.5 12 2.5 12 2.5h-.1s-5.9 0-8.7.3c-.4.1-1.2.1-2 1C.6 4.5.5 6.2.5 6.2S.2 8 .2 9.7v1.6C.2 13 .5 14.8.5 14.8s.2 1.7.8 2.4c.8.9 1.8.9 2.3 1 1.7.2 7.4.3 7.4.3s5.9 0 8.7-.3c.4-.1 1.2-.1 2-1 .6-.7.8-2.4.8-2.4s.3-1.8.3-3.5V9.7c0-1.7-.3-3.5-.3-3.5zM9.8 14.6V7.9l6.4 3.3-6.4 3.4z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </article>
-        </section>
+            <section class="footer--bottom">
+                <article class="container bottom-article">
+                    <div class="footer--left">
+                        <div class="footer--brands">
+                            <a href="/" class="footer--brandLink main" aria-label="Đức Tín logo">
+                                <span class="footer-logo"><strong>ĐỨC TÍN</strong></span>
+                            </a>
+                        </div>
+                        <div class="footer--address">
+                            <h4 class="footer--heading">Xưởng Chế Tạo & Gia Công</h4>
+                            <p class="footer--address-text">
+                                <a href="https://maps.app.goo.gl/fqE8idjkacRK633M6" class="footer--address">
+                                    2/15 Bùi Công Trừng, Ấp 3 Xã Đông Thạnh, Huyện Hóc Môn, TP. Hồ Chí Minh, Việt Nam
+                                </a>
+                            </p>
+                        </div>
+                    </div>
 
-        <section class="footer--bottom">
-          <article class="container bottom-article">
-            <!-- LEFT COLUMN -->
-            <div class="footer--left">
-              <div class="footer--brands">
-                <a
-                  href="https://bangtaiductin.com/"
-                  class="footer--brandLink main"
-                  aria-label="Đức Tín logo"
-                >
-                  <span class="footer-logo"><strong>ĐỨC TÍN</strong></span>
-                </a>
-              </div>
-
-              <div class="footer--address">
-                <h4 class="footer--heading">Xưởng Chế Tạo & Gia Công</h4>
-                <p class="footer--address-text">
-                  <a
-                    href="https://maps.app.goo.gl/fqE8idjkacRK633M6"
-                    class="footer--address"
-                  >
-                    2/15 Bùi Công Trừng, Ấp 3 Xã Đông Thạnh, Huyện Hóc Môn, TP.
-                    Hồ Chí Minh, Việt Nam
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <!-- RIGHT COLUMN -->
-            <div class="footer--privacy">
-              <div class="footer--policy-row">
-                <a href="termsnprivacy.html" class="footer--policy"
-                  >Chính sách bảo mật</a
-                >
-                <a href="termsnprivacy.html" class="footer--policy"
-                  >Điều khoản và Điều kiện</a
-                >
-              </div>
-
-              <p class="footer--copyright text-extra-small">
-                &copy; Copyright 2026 Đức Tín Conveyor. All Rights Reserved.
-              </p>
-            </div>
-          </article>
-        </section>
-      </div>
+                    <div class="footer--privacy">
+                        <div class="footer--policy-row">
+                            <a href="/termsnprivacy.html" class="footer--policy">Chính sách bảo mật</a>
+                            <a href="/termsnprivacy.html" class="footer--policy">Điều khoản và Điều kiện</a>
+                        </div>
+                        <p class="footer--copyright text-extra-small">
+                            © Copyright 2026 Đức Tín Conveyor. All Rights Reserved.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
     </footer>
 
+    <div class="floating-contact">
+        <a href="https://zalo.me/0934045434" target="_blank" class="float-btn btn-zalo" aria-label="Chat Zalo">Zalo</a>
+        <a href="tel:https://zalo.me/0934045434" class="float-btn btn-phone" aria-label="Gọi điện thoại">
+            <svg viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+        </a>
+    </div>
+
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
