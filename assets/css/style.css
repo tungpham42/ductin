@@ -455,7 +455,7 @@ a:focus, button:focus {
             
             .footer-logo { font-size: 1.5rem; letter-spacing: 1px; strong { font-weight: 800; } }
             .footer--heading { margin: 0 0 5px 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
-            .footer--address-text { margin: 0; font-size: 0.85rem; line-height: 1.8; }
+            .footer--address-text { margin: 0; font-size: 0.85rem; line-height: 1.8; white-space: nowrap;}
             .footer--address { 
                 color: #a0aec0; text-decoration: none; transition: color 0.3s ease; 
                 &:hover { color: var(--white); }
